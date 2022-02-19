@@ -1,6 +1,7 @@
 ---
 title: Capturing process
 slug: capturing-process
+order: 10
 ---
 
 # Capturing process

@@ -5,7 +5,6 @@ import { graphql, Link } from "gatsby"
 
 export default function ArticleDetails({ data }) {
     const { html } = data.markdownRemark
-    const { title } = data.markdownRemark.frontmatter
 
     const articles = data.allMarkdownRemark.nodes
 
@@ -25,10 +24,6 @@ export default function ArticleDetails({ data }) {
         
                     </div>
                     
-                    <div className={styles.portfolio}> 
-                        <h2>{ title }</h2>  
-                    </div>
-                    
 
                    <div className={styles.portfolio} dangerouslySetInnerHTML={{__html: html }} />
 
@@ -46,7 +41,7 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {fields: frontmatter___order, order: ASC}) {
         nodes {
             frontmatter {
                 title
@@ -58,3 +53,14 @@ export const query = graphql`
   }
 `
 
+
+
+  // allMarkdownRemark(sort: {fields: frontmatter___order, order: ASC}) {
+  //   nodes {
+  //     frontmatter {
+  //       slug
+  //       title
+  //     }
+  //     id
+  //   }
+  // }

@@ -41,7 +41,7 @@ export default function ArticleDetails0({ data }) {
 
 export const query = graphql`
 query ArtPage {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {fields: frontmatter___order, order: ASC}) {
       nodes {
         frontmatter {
           slug
