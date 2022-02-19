@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from '../components/Layout';
 import * as styles from "../styles/article-details.module.css"
 import { graphql, Link, navigate } from "gatsby"
@@ -9,7 +9,11 @@ export default function ArticleDetails0({ data }) {
 
     const articles = data.allMarkdownRemark.nodes
 
-    navigate("/articles/capturing-process");
+    // navigate("/articles/capturing-process");
+
+    useEffect(() => {
+      navigate("/articles/capturing-process");
+    });
 
     return (
         <div className={styles.fullWrapper}>
