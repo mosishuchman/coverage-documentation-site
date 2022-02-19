@@ -1,0 +1,39 @@
+.header {
+    /* display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px; */
+    align-items: center;
+    margin: 30px 0px;
+  }
+  .header h2 {
+    font-size: 4em;
+    max-width: 800px;
+    margin: auto;
+  }
+  .header h3 {
+    font-size: 2em;
+    font-weight: 400;
+    margin: 20px 0px;
+  }
+  .btn {
+    display: inline-block;
+    background: #D91E71;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin: 35px;
+    font-weight: 500;
+  }
+
+  .marketingCard {
+      max-width: 300px;
+      min-height: 220px;
+      display: inline-block;
+      padding: 20px;
+      text-align: left;
+  }
+
+  .mCardDivGroup {
+    display: flex;
+    justify-content:space-between;
+
+  }

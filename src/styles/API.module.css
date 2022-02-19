@@ -1,0 +1,34 @@
+.portfolio {
+    margin-left: 300px;
+    text-align: left;
+    padding: 0px 20px;
+    max-width: 900px;
+    margin-right: auto;
+    
+
+  }
+  .portfolio > h2 {
+    font-size: 3em;
+    color: #282C34
+  }
+  .portfolio > h3 {
+    font-size: 2em;
+    font-weight: 400;
+    margin: 15px 0px 30px;
+    color: #282C34
+  }
+
+  .portfolio > p {
+    color: #282C34
+  }
+
+  .fullWrapper {
+    background-color:white;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    overflow: auto;
+    z-index: -1;
+  }
