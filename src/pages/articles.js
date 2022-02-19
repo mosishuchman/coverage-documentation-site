@@ -26,11 +26,6 @@ export default function ArticleDetails0({ data }) {
         
                     </div>
                     
-                    <div className={styles.portfolio}> 
-                        <h2>{ title }</h2>  
-                    </div>
-                    
-
                    <div className={styles.portfolio} dangerouslySetInnerHTML={{__html: html }} />
 
             </Layout>

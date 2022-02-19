@@ -9,31 +9,27 @@
     z-index: -1;
   }
 
-  .portfolio {
+    .portfolio {
     margin-left: 300px;
     text-align: left;
     padding: 0px 20px 0px 40px;
     max-width: 900px;
-    margin-right: auto; 
+    margin-right: auto;
+    color: #282C34;
   }
 
   .portfolio > h1 {
     font-size: 4em;
-    color: #282C34;
     margin: 15px 0px 15px;
   }  
 
   .portfolio > h2 {
     font-size: 3em;
-    color: #282C34
+    color: #282C34;
   }
   .portfolio > h3 {
     font-size: 2em;
     font-weight: 400;
     margin: 15px 0px 30px;
-    color: #282C34
-  }
-
-  .portfolio > p {
-    color: #282C34
+    color: #282C34;
   }

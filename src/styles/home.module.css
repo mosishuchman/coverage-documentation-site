@@ -1,9 +1,7 @@
 .header {
-    /* display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 10px; */
     align-items: center;
     margin: 30px 0px;
+    color: white;
   }
   .header h2 {
     font-size: 4em;
@@ -22,6 +20,7 @@
     border-radius: 6px;
     margin: 35px;
     font-weight: 500;
+    color: white;
   }
 
   .marketingCard {

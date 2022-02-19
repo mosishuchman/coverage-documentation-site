@@ -10,7 +10,7 @@ export default function GettingStarted({ data }) {
 
   return (
       <Layout>
-        <div style={{ maxWidth: 800, margin: "auto", textAlign: "left" }}>
+        <div style={{ color: "white", maxWidth: 800, margin: "auto", textAlign: "left" }}>
             <div dangerouslySetInnerHTML={{ __html: html }}/> 
         </div>
       </Layout>
