@@ -9,8 +9,6 @@ export default function ArticleDetails0({ data }) {
 
     const articles = data.allMarkdownRemark.nodes
 
-    console.log(data);
-
     navigate("/articles/capturing-process");
 
     return (
