@@ -41,7 +41,10 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: {fields: frontmatter___order, order: ASC}) {
+    allMarkdownRemark(
+      sort: {fields: frontmatter___order, order: ASC}
+      filter: {fileAbsolutePath: {regex: "/(reference)/"}}
+      ) {
         nodes {
             frontmatter {
                 title
@@ -52,15 +55,3 @@ export const query = graphql`
     }
   }
 `
-
-
-
-  // allMarkdownRemark(sort: {fields: frontmatter___order, order: ASC}) {
-  //   nodes {
-  //     frontmatter {
-  //       slug
-  //       title
-  //     }
-  //     id
-  //   }
-  // }
