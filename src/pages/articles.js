@@ -41,7 +41,10 @@ export default function ArticleDetails0({ data }) {
 
 export const query = graphql`
 query ArtPage {
-    allMarkdownRemark(sort: {fields: frontmatter___order, order: ASC}) {
+    allMarkdownRemark(
+        sort: {fields: frontmatter___order, order: ASC}
+        filter: {fileAbsolutePath: {regex: "/(reference)/"}}
+        ) {
       nodes {
         frontmatter {
           slug
